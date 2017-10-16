@@ -1,12 +1,38 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#87CEFA",
     "navigationBarTitleText": "小程序",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#87CEFA",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "selectedIconPath": "pages/asset/home_selected.png",
+        "iconPath": "pages/asset/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/asset/add-record-selected.png",
+        "iconPath": "pages/asset/add-record.png",
+        "pagePath": "//",
+        "text": "记事"
+      },
+      {
+        "selectedIconPath": "pages/asset/setting-selected.png",
+        "iconPath": "pages/asset/setting.png",
+        "pagePath": "pages/logs/logs",
+        "text": "设置"
+      }
+    ]
   }
 }
