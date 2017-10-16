@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<scrol-view class="container" scroll-y="true">
+<view class="container">
   <swiper class="boxs" autoplay="true" circular="true" interval="2500">
     <swiper-item class="box">
       <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg' />
@@ -11,7 +11,34 @@
       <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg' />
     </swiper-item>
   </swiper>
-  <view class="test">
+  <view class="test1">
     <text>测试用的小玩意</text>
   </view>
-</scrol-view>
+  <view class="test2">
+    <text>测试用的小玩意</text>
+  </view>
+  <view class="test3">
+    <text>测试用的小玩意</text>
+  </view>
+  <view class="test4">
+    <text>测试用的小玩意</text>
+  </view>
+  <view class="test1">
+    <text>测试用的小玩意</text>
+  </view>
+  <view class="test2">
+    <text>测试用的小玩意</text>
+  </view>
+  <view class="test3">
+    <text>测试用的小玩意</text>
+  </view>
+  <view class="test1">
+    <text>测试用的小玩意</text>
+  </view>
+  <view class="test2">
+    <text>测试用的小玩意</text>
+  </view>
+  <view class="test3">
+    <text>测试用的小玩意</text>
+  </view>
+</view>
