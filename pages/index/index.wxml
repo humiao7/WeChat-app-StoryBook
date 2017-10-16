@@ -1,44 +1,24 @@
 <!--index.wxml-->
 <view class="container">
-  <swiper class="boxs" autoplay="true" circular="true" interval="2500">
-    <swiper-item class="box">
-      <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg' />
-    </swiper-item>
-    <swiper-item class="box">
-      <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg' />
-    </swiper-item>
-    <swiper-item class="box">
-      <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg' />
-    </swiper-item>
-  </swiper>
-  <view class="test1">
-    <text>测试用的小玩意</text>
+  <view class='broadcast'>
+    <swiper class="boxs" autoplay="true" circular="true" interval="2500">
+      <swiper-item class="box">
+        <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg' mode="widthFix" />
+      </swiper-item>
+      <swiper-item class="box">
+        <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg' mode="widthFix" />
+      </swiper-item>
+      <swiper-item class="box">
+        <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg' mode="widthFix" />
+      </swiper-item>
+    </swiper>
   </view>
-  <view class="test2">
-    <text>测试用的小玩意</text>
-  </view>
-  <view class="test3">
-    <text>测试用的小玩意</text>
-  </view>
-  <view class="test4">
-    <text>测试用的小玩意</text>
-  </view>
-  <view class="test1">
-    <text>测试用的小玩意</text>
-  </view>
-  <view class="test2">
-    <text>测试用的小玩意</text>
-  </view>
-  <view class="test3">
-    <text>测试用的小玩意</text>
-  </view>
-  <view class="test1">
-    <text>测试用的小玩意</text>
-  </view>
-  <view class="test2">
-    <text>测试用的小玩意</text>
-  </view>
-  <view class="test3">
-    <text>测试用的小玩意</text>
+  <view class="test">
+    <view class='li' wx:for="{{listInfo}}">
+      <image class="header" src='../asset/head_pic.jpg' />
+      <view class="description">
+        <text>{{item}}</text>
+      </view>
+    </view>
   </view>
 </view>
