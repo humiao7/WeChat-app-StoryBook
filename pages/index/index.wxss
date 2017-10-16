@@ -22,7 +22,7 @@ image {
   padding: 10px;
   direction: row;
   min-height: 100px;
-  background-color: #efefef;
+  background-color: #ffffff;
   border-bottom: 1px solid #b8b8b8;
 }
 
