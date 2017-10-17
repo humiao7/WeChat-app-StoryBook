@@ -1,0 +1,39 @@
+.mine-info{
+  margin: 10px 0;
+  width: 100%;
+  height: 150rpx;
+  background-color: #fff;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  margin: 11rpx 22rpx;
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  float: left;
+}
+
+.login-button{
+  margin: 30rpx 20rpx;
+  width: 225rpx;
+  height: 90rpx;
+  font-size: 35rpx;
+  text-align: center;
+  float: right;
+  color: #FFFAFA;
+  background-color: #BCEE68;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

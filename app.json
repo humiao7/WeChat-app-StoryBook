@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/mine/mine",
     "pages/logs/logs"
   ],
   "window": {
@@ -29,10 +30,10 @@
         "text": "记事"
       },
       {
-        "selectedIconPath": "pages/asset/setting-selected.png",
-        "iconPath": "pages/asset/setting.png",
-        "pagePath": "pages/logs/logs",
-        "text": "设置"
+        "selectedIconPath": "pages/asset/mine-selected.png",
+        "iconPath": "pages/asset/mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
       }
     ]
   }
