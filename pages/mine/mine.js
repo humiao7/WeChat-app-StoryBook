@@ -4,7 +4,6 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false
   },
@@ -30,5 +29,14 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  logOut: function () {
+    this.setData({
+      userInfo: {},
+      hasUserInfo: false,
+      globalData:null
+    }),
+      getApp().globalData.userInfo = null;
+      console.log(app.globalData.userInfo);
   }
 })

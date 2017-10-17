@@ -4,10 +4,12 @@
     <block wx:if="{{hasUserInfo}}">
       <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <button class="logout-button" bindtap="logOut"> 注销 </button>
     </block>
     <button class="login-button" wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 用户登陆 </button>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <text wx:if="{{hasUserInfo}}" class="user-motto">真听话！</text>
+    <text wx:else class="user-motto">麻溜的，赶紧登陆！</text>
   </view>
 </view>
