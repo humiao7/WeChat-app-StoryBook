@@ -1,0 +1,6 @@
+<!--pages/add-story/add-story.wxml-->
+<view class='container'>
+  <view>
+    <text>pages/add-story/add-story.wxml</text>
+  </view>
+</view>

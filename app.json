@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/mine/mine",
-    "pages/logs/logs"
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/add-story/add-story"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -26,7 +27,7 @@
       {
         "selectedIconPath": "pages/asset/add-record-selected.png",
         "iconPath": "pages/asset/add-record.png",
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/add-story/add-story",
         "text": "记事"
       },
       {

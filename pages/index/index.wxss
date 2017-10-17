@@ -2,11 +2,6 @@
 
 .broadcast {
   width: 100%;
-  height: 40%;
-}
-
-.boxs {
-  height: 100%;
 }
 
 image {
@@ -22,7 +17,7 @@ image {
   padding: 10px;
   direction: row;
   min-height: 100px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-bottom: 1px solid #b8b8b8;
 }
 

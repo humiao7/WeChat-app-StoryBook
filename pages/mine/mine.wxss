@@ -1,14 +1,8 @@
 .mine-info {
-  margin: 10px 0;
+  margin: 10px 0 20px 0;
   width: 100%;
   height: 150rpx;
   background-color: #fff;
-}
-
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .userinfo-avatar {
@@ -20,10 +14,11 @@
 }
 
 .login-button {
-  margin: 30rpx 20rpx;
-  width: 225rpx;
-  height: 90rpx;
-  font-size: 35rpx;
+  margin: 37.5rpx 20rpx;
+  padding: 0;
+  width: 190rpx;
+  height: 75rpx;
+  font-size: 30rpx;
   text-align: center;
   float: right;
   color: #fffafa;
@@ -31,10 +26,11 @@
 }
 
 .logout-button {
-  margin: 30rpx 20rpx;
-  width: 225rpx;
-  height: 90rpx;
-  font-size: 35rpx;
+  margin: 37.5rpx 20rpx;
+  padding: 0;
+  width: 190rpx;
+  height: 75rpx;
+  font-size: 30rpx;
   text-align: center;
   float: right;
   color: #fffafa;
@@ -43,8 +39,41 @@
 
 .userinfo-nickname {
   color: #aaa;
+  float: left;
+  margin: 50rpx 50rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+.abount-content {
+  padding: 0 20rpx;
+  direction: column;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.about-info {
+  height: 86rpx;
+}
+
+.about-icon{
+  margin: 8rpx;
+  width: 70rpx;
+  height: 70rpx;
+  float: left;
+}
+
+.about-icon2{
+  margin: 13rpx;
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+}
+
+.more-icon{
+  margin: 13rpx;
+  width: 60rpx;
+  height: 60rpx;
+  float: right; 
 }
