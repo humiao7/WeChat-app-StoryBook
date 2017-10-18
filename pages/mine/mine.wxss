@@ -87,4 +87,5 @@
 
 .more-text {
   font-size: 30rpx;
+  color: #ABABAB;
 }
