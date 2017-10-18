@@ -1,1 +1,24 @@
 /* pages/add-story/add-story.wxss */
+
+.edit-page {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-content:flex-start;
+}
+
+.edit-content {
+  background-color: #fff;
+  flex: 1;
+}
+
+.date-tips{
+  font-size: 40rpx;
+}
+
+.contents {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}

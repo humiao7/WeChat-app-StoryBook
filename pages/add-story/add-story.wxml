@@ -1,6 +1,8 @@
 <!--pages/add-story/add-story.wxml-->
 <view class='container'>
-  <view>
-    <text>pages/add-story/add-story.wxml</text>
+  <view class='edit-page'>
+    <view class='edit-content'>
+    <textarea class="contents" maxlength="-1" auto-height="true" placeholder='记录心情...'></textarea>
+    </view>
   </view>
 </view>

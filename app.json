@@ -1,14 +1,14 @@
 {
   "pages": [
-    "pages/mine/mine",
     "pages/index/index",
-    "pages/add-story/add-story",    
+    "pages/add-story/add-story",  
+    "pages/mine/mine",  
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#87CEFA",
-    "navigationBarTitleText": "小程序",
+    "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -27,7 +27,7 @@
       {
         "selectedIconPath": "pages/asset/add-record-selected.png",
         "iconPath": "pages/asset/add-record.png",
-        "pagePath": "//",
+        "pagePath": "pages/add-story/add-story",
         "text": "记事"
       },
       {
