@@ -11,19 +11,29 @@
   <view class="abount-content">
     <view class="about-info" style='border-bottom: 1px solid #DCDCDC;'>
       <image class="about-icon" src="../asset/phone.png"></image>
+      <text class="about-text">手机号</text>
+      <view class='center'></view>
+      <text class="more-text">去绑定</text>
       <image class="more-icon" src="../asset/more.png"></image>
     </view>
     <view class="about-info" style='border-bottom: 1px solid #DCDCDC;'>
       <image class="about-icon2" src="../asset/feedback.png"></image>
+      <text class="about-text">意见反馈</text>
+      <view class='center'></view>
       <image class="more-icon" src="../asset/more.png"></image>
     </view>
     <view class="about-info" style='border-bottom: 1px solid #DCDCDC;'>
       <image class="about-icon" src="../asset/contact.png"></image>
+      <text class="about-text">联系我们</text>
+      <view class='center'></view>
+      <text class="more-text">12345678</text>
       <image class="more-icon" src="../asset/more.png"></image>
     </view>
     <view class="about-info">
       <image class="about-icon2" src="../asset/about.png"></image>
-      <image class="more-icon" src="../asset/more.png"></image>
+      <text class="about-text">软件关于</text>
+      <view class='center'></view>
+      <text class="more-text">1.0.0</text>
     </view>
   </view>
 </view>

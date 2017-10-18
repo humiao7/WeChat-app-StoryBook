@@ -49,31 +49,42 @@
   background-color: #fff;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid #DCDCDC;
-  border-bottom: 1px solid #DCDCDC;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 .about-info {
   height: 86rpx;
+  display: flex;
+  align-items: center;
 }
 
-.about-icon{
-  margin: 8rpx;
-  width: 70rpx;
-  height: 70rpx;
-  float: left;
+.about-icon {
+  margin: 0 18rpx;
+  width: 50rpx;
+  height: 50rpx;
 }
 
-.about-icon2{
-  margin: 13rpx;
-  width: 60rpx;
-  height: 60rpx;
-  float: left;
+.about-icon2 {
+  margin: 0 25rpx;
+  width: 36rpx;
+  height: 36rpx;
 }
 
-.more-icon{
-  margin: 13rpx;
-  width: 60rpx;
-  height: 60rpx;
-  float: right; 
+.about-text {
+  font-size: 30rpx;
+}
+
+.center {
+  flex: 1;
+}
+
+.more-icon {
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align: baseline;
+}
+
+.more-text {
+  font-size: 30rpx;
 }
