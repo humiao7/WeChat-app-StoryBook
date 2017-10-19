@@ -1,8 +1,8 @@
 <!--pages/add-story/add-story.wxml-->
 <view class='container'>
   <view class='edit-page'>
-    <input class='title' placeholder='标题..' maxlength="-1" auto-focus='true'></input>
-    <textarea class="contents" maxlength="-1" auto-height='true' placeholder='记录心情...'></textarea>
-    <text class='tips'>2017-10-19</text>
+    <input class='title' placeholder='标题..' maxlength="-1" auto-focus='true' value='new_title'></input>
+    <textarea class="contents" maxlength="-1" auto-height='true' placeholder='记录心情...' value='new_content' bindconfirm="commitStory"></textarea>
+    <text class='tips'>{{edit_time}}</text>
   </view>
 </view>
