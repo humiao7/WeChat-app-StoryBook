@@ -24,19 +24,27 @@ Page({
       }
     }
   },
+  //登陆
   getUserInfo: function (e) {
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
   },
+  //注销
   logOut: function () {
     this.setData({
       userInfo: {},
       hasUserInfo: false,
-      globalData:null
+      globalData: null
     }),
       getApp().globalData.userInfo = null;
-      console.log(app.globalData.userInfo);
+    console.log(app.globalData.userInfo);
+  },
+  //联系我们
+  contactUs:function(){
+    wx.makePhoneCall({
+      phoneNumber: '17688893619' //仅为示例，并非真实的电话号码
+    })
   }
 })

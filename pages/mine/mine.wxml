@@ -9,24 +9,24 @@
     <button class="login-button" wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 用户登陆 </button>
   </view>
   <view class="abount-content">
-    <view class="about-info" style='border-bottom: 1px solid #DCDCDC;'>
+    <view class="about-info" style='border-bottom: 1px solid #DCDCDC;' bindtap="listenerButton">
       <image class="about-icon" src="../asset/phone.png"></image>
       <text class="about-text">手机号</text>
       <view class='center'></view>
       <text class="more-text">去绑定</text>
       <image class="more-icon" src="../asset/more.png"></image>
     </view>
-    <view class="about-info" style='border-bottom: 1px solid #DCDCDC;'>
+    <navigator url='../feedback/feedback' class="about-info" style='border-bottom: 1px solid #DCDCDC;'>
       <image class="about-icon2" src="../asset/feedback.png"></image>
       <text class="about-text">意见反馈</text>
       <view class='center'></view>
       <image class="more-icon" src="../asset/more.png"></image>
-    </view>
-    <view class="about-info" style='border-bottom: 1px solid #DCDCDC;'>
+    </navigator>
+    <view class="about-info" style='border-bottom: 1px solid #DCDCDC;' bindtap="contactUs">
       <image class="about-icon" src="../asset/contact.png"></image>
       <text class="about-text">联系我们</text>
       <view class='center'></view>
-      <text class="more-text">12345678</text>
+      <text class="more-text">17688893619</text>
       <image class="more-icon" src="../asset/more.png"></image>
     </view>
     <view class="about-info">
