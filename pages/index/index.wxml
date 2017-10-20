@@ -14,10 +14,12 @@
     </swiper>
   </view>
   <view class="test">
-    <view class='li' wx:for="{{listInfo}}">
+    <view class='li' wx:for="{{showData}}" wx:key="title">
       <image class="header" src='../asset/head_pic.jpg' />
       <view class="description">
-        <text>{{item}}</text>
+        <text class="title">{{item.title}}</text>
+        <text class="centent">{{item.content}}</text>
+        <text class="time">{{item.created_date}}</text>        
       </view>
     </view>
   </view>

@@ -1,5 +1,7 @@
 // pages/add-story/add-story.js
 var util = require('../../utils/util.js');
+var new_title = '';
+var new_content = '';
 
 Page({
 
@@ -7,15 +9,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-    new_title: "",
-    new_content: ""
-
   },
-
-  commitStory: function () {
+  titleKeyInput: function (e) {
+    this.setData({
+      new_title: e.detail.value
+    })
+  },
+  contentKeyInput: function (e) {
+    this.setData({
+      new_content: e.detail.value
+    })
+  },
+  commitStory: function (e) {
+    var that = this;
     var storys = wx.getStorageSync('storys');
-    var new_story = { 'title': new_title, 'content': new_content };
-    console.log(new_story);
+    var new_story = { 'title': that.data.new_title, 'content': that.data.new_content, 'created_date': that.data.edit_time };
+    storys.push(new_story);
+    console.log(storys);
+    wx.setStorageSync('storys', storys);
   },
 
   /**

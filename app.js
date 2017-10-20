@@ -4,7 +4,10 @@ App({
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    wx.setStorageSync('logs', logs);
+
+    var storys = wx.getStorageSync('storys') || []
+    wx.setStorageSync('storys', storys);
 
     // 登录
     wx.login({
