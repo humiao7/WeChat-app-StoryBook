@@ -42,9 +42,22 @@ Page({
     console.log(app.globalData.userInfo);
   },
   //联系我们
-  contactUs:function(){
+  contactUs: function () {
     wx.makePhoneCall({
       phoneNumber: '17688893619' //仅为示例，并非真实的电话号码
+    })
+  },
+  clearCache: function () {
+    wx.removeStorage({
+      key: 'storys',
+      success: function (res) {
+        wx.showToast({
+          title: '成功',
+          icon: 'success',
+          duration: 2000
+        });
+        wx.setStorageSync('storys', []);
+      }
     })
   }
 })

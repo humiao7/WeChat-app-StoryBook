@@ -14,13 +14,13 @@
     </swiper>
   </view>
   <view class="test">
-    <view class='li' wx:for="{{showData}}" wx:key="title">
+    <navigator class='li' wx:for="{{showData}}" wx:key="title" url='../story-detail/story-detail?title={{item.title}}&content={{item.content}}&created_date={{item.created_date}}'>
       <image class="header" src='../asset/head_pic.jpg' />
       <view class="description">
         <text class="title">{{item.title}}</text>
         <text class="centent">{{item.content}}</text>
-        <text class="time">{{item.created_date}}</text>        
+        <text class="time">{{item.created_date}}</text>
       </view>
-    </view>
+    </navigator>
   </view>
 </view>

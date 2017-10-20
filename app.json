@@ -1,11 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/story-detail/story-detail",
     "pages/add-story/add-story",
     "pages/mine/mine",
     "pages/feedback/feedback",
     "pages/logs/logs"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",

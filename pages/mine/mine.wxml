@@ -29,6 +29,11 @@
       <text class="more-text">17688893619</text>
       <image class="more-icon" src="../asset/more.png"></image>
     </view>
+    <view class="about-info" style='border-bottom: 1px solid #DCDCDC;' bindtap='clearCache'>
+      <image class="about-icon2" src="../asset/clear.png"></image>
+      <text class="about-text">清除缓存</text>
+      <view class='center'></view>
+    </view>
     <view class="about-info">
       <image class="about-icon2" src="../asset/about.png"></image>
       <text class="about-text">软件关于</text>
