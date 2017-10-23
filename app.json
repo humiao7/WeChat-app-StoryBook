@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/add-story/add-story",
     "pages/index/index",
     "pages/story-detail/story-detail",
-    "pages/add-story/add-story",
     "pages/mine/mine",
     "pages/feedback/feedback",
     "pages/logs/logs"
@@ -25,12 +25,6 @@
         "iconPath": "pages/asset/home.png",
         "pagePath": "pages/index/index",
         "text": "首页"
-      },
-      {
-        "selectedIconPath": "pages/asset/add-record-selected.png",
-        "iconPath": "pages/asset/add-record.png",
-        "pagePath": "pages/add-story/add-story",
-        "text": "记事"
       },
       {
         "selectedIconPath": "pages/asset/mine-selected.png",

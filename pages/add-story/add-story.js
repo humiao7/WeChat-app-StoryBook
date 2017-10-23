@@ -27,6 +27,9 @@ Page({
     storys.push(new_story);
     console.log(storys);
     wx.setStorageSync('storys', storys);
+    wx.navigateBack({
+      delta: 1
+    });
   },
 
   /**

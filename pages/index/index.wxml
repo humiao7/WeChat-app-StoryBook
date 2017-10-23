@@ -23,4 +23,7 @@
       </view>
     </navigator>
   </view>
+  <navigator class="add-area" url='../add-story/add-story'>
+    <image class='add-tab'  src='../asset/add-record-selected.png'></image>
+  </navigator>
 </view>

@@ -1,20 +1,17 @@
 /* pages/add-story/add-story.wxss */
 
 .edit-page {
-  display: -webkit-flex; /* Safari */
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  align-content: flex-start;
-  padding: 0 20rpx;
   background-color: #fff;
-  overflow: hidden;
+  justify-content: space-between;
+  margin: 0 20rpx;
 }
 
 .title {
   width: 100%;
-  margin-top: 20rpx;
-  padding-bottom: 15rpx;
+  height: 100rpx;
   color: #000;
   font-size: 43rpx;
   text-align: left;
@@ -22,14 +19,32 @@
 }
 
 .contents {
+  flex: 1;
   width: 100%;
-  min-height: 33%;
   margin: 20rpx 0;
   text-align: left;
+  line-height: 55rpx;
+  border-bottom: 1px solid #efefef;
+  overflow: auto;
 }
 
 .tips {
+  height: 40rpx;
   text-align: right;
   font-size: 25rpx;
   color: #8a8a8a;
+}
+
+.tool-button{
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  align-items: center;
+}
+
+.save{
+  margin: 10rpx 0;
+  font-size: 35rpx;
+  color:#fff;
+  background-color: yellowgreen;
 }

@@ -48,15 +48,24 @@ Page({
     })
   },
   clearCache: function () {
-    wx.removeStorage({
-      key: 'storys',
+    wx.showModal({
+      content: '清除所有数据？',
       success: function (res) {
-        wx.showToast({
-          title: '成功',
-          icon: 'success',
-          duration: 2000
-        });
-        wx.setStorageSync('storys', []);
+        if (res.confirm) {
+          wx.removeStorage({
+            key: 'storys',
+            success: function (res) {
+              wx.showToast({
+                title: '成功',
+                icon: 'success',
+                duration: 2000
+              });
+              wx.setStorageSync('storys', []);
+            }
+          });
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
       }
     })
   }

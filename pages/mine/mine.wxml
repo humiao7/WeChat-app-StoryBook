@@ -31,7 +31,7 @@
     </view>
     <view class="about-info" style='border-bottom: 1px solid #DCDCDC;' bindtap='clearCache'>
       <image class="about-icon2" src="../asset/clear.png"></image>
-      <text class="about-text">清除缓存</text>
+      <text class="about-text">清除数据</text>
       <view class='center'></view>
     </view>
     <view class="about-info">

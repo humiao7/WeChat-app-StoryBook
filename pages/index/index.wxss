@@ -35,7 +35,7 @@ image {
   flex: 1;
 }
 
-.title{
+.title {
   height: 40rpx;
   line-height: 40rpx;
   margin-bottom: 10rpx;
@@ -45,7 +45,7 @@ image {
   text-overflow: ellipsis;
 }
 
-.centent{
+.centent {
   font-size: 30rpx;
   text-align: left;
   overflow: hidden;
@@ -53,10 +53,25 @@ image {
   text-overflow: ellipsis;
 }
 
-.time{
+.time {
   font-size: 25rpx;
   line-height: 40rpx;
   text-align: right;
   margin-top: 10rpx;
   color: #8a8a8a;
+}
+
+.add-area {
+  position: fixed;
+  right: 80rpx;
+  bottom: 70rpx;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.add-tab {
+  width: 90rpx;
+  height: 90rpx;
 }
