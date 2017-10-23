@@ -22,14 +22,27 @@ Page({
   },
   commitStory: function (e) {
     var that = this;
-    var storys = wx.getStorageSync('storys');
-    var new_story = { 'title': that.data.new_title, 'content': that.data.new_content, 'created_date': that.data.edit_time };
-    storys.push(new_story);
-    console.log(storys);
-    wx.setStorageSync('storys', storys);
-    wx.navigateBack({
-      delta: 1
-    });
+    if (that.data.new_title == undefined || that.data.new_title == '') {
+      wx.showModal({
+        content: '请输入标题',
+        showCancel: false,
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+          }
+        }
+      })
+    }
+    else {
+      var storys = wx.getStorageSync('storys');
+      var new_story = { 'title': that.data.new_title, 'content': that.data.new_content, 'created_date': that.data.edit_time };
+      storys.push(new_story);
+      console.log(storys);
+      wx.setStorageSync('storys', storys);
+      wx.navigateBack({
+        delta: 1
+      });
+    }
   },
 
   /**
@@ -49,7 +62,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () { 
+  onShow: function () {
     var time = util.formatTime(new Date());
     this.setData({
       edit_time: time
@@ -60,17 +73,17 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    this.setData({
-      header: '',
-      body: ''
-    });
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    this.setData({
+      header: '',
+      body: ''
+    });
   },
 
   /**

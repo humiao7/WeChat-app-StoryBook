@@ -1,11 +1,15 @@
 <!--pages/add-story/add-story.wxml-->
-<view class='container'>
-  <view class='edit-page'>
-    <input class='title' value='{{header}}' placeholder='标题..' maxlength="-1" auto-focus='true' bindconfirm="commitStory" bindinput="titleKeyInput"></input>
-    <textarea class="contents" value='{{body}}' maxlength="-1" auto-height='true' placeholder='记录心情...' bindconfirm="commitStory" bindinput="contentKeyInput"></textarea>
-    <text class='tips'>{{edit_time}}</text>
-    <view class='tool-button'>
-      <button class='save' bindtap='commitStory'>保存</button>
-    </view>
+<scroll-view class='edit-page' scroll-y='true'>
+  <view class='title'>
+    <input value='{{header}}' placeholder='标题..' maxlength="-1" auto-focus='true' bindinput="titleKeyInput"></input>
   </view>
-</view>
+  <view class='content-caves'>
+    <textarea class="contents" value='{{body}}' maxlength="-1" auto-height='true' placeholder='记录心情...' bindinput="contentKeyInput"></textarea>
+  </view>
+  <view class='tips'>
+    <text>{{edit_time}}</text>
+  </view>
+  <view class='tool-button'>
+    <button class='save' bindtap='commitStory'>保存</button>
+  </view>
+</scroll-view>
