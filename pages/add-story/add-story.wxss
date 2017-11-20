@@ -1,48 +1,39 @@
-/* pages/add-story/add-story.wxss */
-
-.edit-page {
-  background-color: #fff;
+.add_story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15rpx;
+  background: #fff;
 }
 
 .title {
-  padding:20rpx 0;
+  padding: 30rpx 0 5rpx 0;
   width: 100%;
-  color: #000;
-  font-size: 43rpx;
-  font-weight: bold;
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
   border-bottom: 1px solid #efefef;
-}
-
-.content-caves{
-  min-height: 300rpx;
-  border-bottom: 1px solid #efefef;
+  text-overflow: wrap;
 }
 
 .contents {
+  padding: 15rpx 0;
   width: 100%;
-  margin: 20rpx;
-  text-align: left;
-  line-height: 55rpx;
-  overflow: auto;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
-.tips {
-  padding: 20rpx;
-  height: 40rpx;
+.create_time{
+  width: 100%;
   text-align: right;
   font-size: 25rpx;
   color: #8a8a8a;
 }
 
-.tool-button{
-  padding: 20rpx;
-  background-color: #fff;
-  align-items: center;
-}
-
-.save{
+.save {
+  width: 100%;
   font-size: 35rpx;
-  color:#fff;
+  color: #fff;
   background-color: yellowgreen;
+  margin: 20rpx 0;
 }

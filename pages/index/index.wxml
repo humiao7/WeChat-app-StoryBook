@@ -1,29 +1,24 @@
-<!--index.wxml-->
-<view class="container">
-  <view class='broadcast'>
-    <swiper class="boxs" indicator-dots="true" autoplay="true" circular="true" interval="2500">
-      <swiper-item class="box">
-        <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg' mode="widthFix" />
-      </swiper-item>
-      <swiper-item class="box">
-        <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg' mode="widthFix" />
-      </swiper-item>
-      <swiper-item class="box">
-        <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg' mode="widthFix" />
-      </swiper-item>
-    </swiper>
-  </view>
-  <view class="test">
-    <navigator class='li' wx:for="{{showData}}" wx:key="title" url='../story-detail/story-detail?title={{item.title}}&content={{item.content}}&created_date={{item.created_date}}'>
-      <image class="header" src='../asset/head_pic.jpg' />
-      <view class="description">
-        <text class="title">{{item.title}}</text>
-        <text class="centent">{{item.content}}</text>
-        <text class="time">{{item.created_date}}</text>
-      </view>
-    </navigator>
-  </view>
-  <navigator class="add-area" url='../add-story/add-story'>
-    <image class='add-tab'  src='../asset/add-record-selected.png'></image>
+<swiper indicator-dots="true" autoplay="true" circular="true" interval="2500">
+  <swiper-item>
+    <image class="broadcast_pape" src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1511165993&di=0d4c1f289a80f74285e9c7b047a82833&src=http://pic23.nipic.com/20120909/5907156_101905268000_2.jpg' mode="widthFix" />
+  </swiper-item>
+  <swiper-item>
+    <image class="broadcast_pape" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509357204&di=6a293ea759775c741c65c284d5aa3698&imgtype=jpg&er=1&src=http%3A%2F%2Fpic19.nipic.com%2F20120225%2F3425666_160114711164_2.jpg' mode="widthFix" />
+  </swiper-item>
+  <swiper-item>
+    <image class="broadcast_pape" src='http://img3.3lian.com/2013/v7/56/d/45.jpg' mode="widthFix" />
+  </swiper-item>
+</swiper>
+<view class="content">
+  <navigator class='list' wx:for="{{showData}}" wx:key="title" url='../story-detail/story-detail?title={{item.title}}&content={{item.content}}&created_date={{item.created_date}}'>
+    <image class="head_img" src='../asset/head_pic.jpg' />
+    <view class="maininfo">
+      <text class="title">{{item.title}}</text>
+      <text class="abstract">{{item.content}}</text>
+      <text class="time_stamp">{{item.created_date}}</text>
+    </view>
   </navigator>
 </view>
+<navigator class="add-area" url='../add-story/add-story'>
+  <image class='add-tab' src='../asset/add-record-selected.png'></image>
+</navigator>

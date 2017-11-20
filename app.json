@@ -3,9 +3,9 @@
     "pages/index/index",
     "pages/story-detail/story-detail",
     "pages/add-story/add-story",
+    "pages/logs/logs",
     "pages/mine/mine",
-    "pages/feedback/feedback",
-    "pages/logs/logs"
+    "pages/feedback/feedback"
   ],
   "window": {
     "backgroundTextStyle": "light",
